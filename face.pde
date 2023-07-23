@@ -48,15 +48,15 @@ private ArrayList<MatOfPoint2f> detectFacemarks(PImage i) {
 
 private void drawFacemarks(Point [] p, PVector o) {
   int keypoint[]={
-    0, 16, //脸两侧
-    17, 18, 19, 20, 21, //左眉毛
-    22, 23, 24, 25, 26, // 右眉毛
-    36, 37, 38, 39, 40, 41, //左眼
-    42, 43, 44, 45, 46, 47, //右眼
-    48, //嘴左
-    51, //嘴上
-    54, //嘴右
-    57//嘴下
+    0, 16, //face
+    17, 18, 19, 20, 21, //left browse
+    22, 23, 24, 25, 26, // right browse
+    36, 37, 38, 39, 40, 41, //left eye
+    42, 43, 44, 45, 46, 47, //right eye
+    48, //left mouth
+    51, //top mouth
+    54, //right mouth
+    57//bottom mouth
   };
   pushStyle();
   noStroke();
