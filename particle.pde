@@ -3,13 +3,9 @@ void setParticles() {
   for (int i = 0; i < 10000; i++) {
     float x = random(width);
     float y = random(height);
-    
-
-    
     particles[i]= new Particle(x, y );
   }
 }
-
 
 class Particle {
   float posX, posY, incr, theta;
@@ -18,9 +14,7 @@ class Particle {
   Particle(float xIn, float yIn) {
     posX = xIn;
     posY = yIn;
-   
   }
-
 
   public void move() {
     update();
