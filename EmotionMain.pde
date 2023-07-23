@@ -10,18 +10,18 @@ final int W = 640, H = 480;
 String faceFile, modelFile;
 Facemark fm;
 ArrayList<MatOfPoint2f> shapes ;
-Point [] pinhua;//平滑后的数据
-float mouthsize=0;//嘴巴左右大小
-float eyesize=0;//眼睛大小
-float eyebrow=0;//眉间距
-float mouthheight=0;//嘴巴上下大小
+Point [] pinhua;
+float mouthsize=0;
+float eyesize=0;
+float eyebrow=0;
+float mouthheight=0;
 boolean debug=false;
 float adj0=0, adj1=0, adj2=0;
 
 Particle[] particles;
-float alpha;//透明度
-float speed;//粒子速度
-float amount;//例子数量
+float alpha;
+float speed;
+float amount;
 
 void setup() {
   size(1920 , 1080);
